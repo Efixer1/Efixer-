@@ -119,7 +119,34 @@ font-size:14px;
     Bujumbura, Burundi
   </p>
 </section>
-<footer>
+<footer><section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-cards">
+    <!-- Phone -->
+    <div class="card">
+      <h3>📞 Phone</h3>
+      <a href="tel:+257XXXXXXXX">+257 XX XX XX XX</a>
+    </div>
+
+    <!-- Email -->
+    <div class="card">
+      <h3>📧 Email</h3>
+      <a href="mailto:youremail@gmail.com">youremail@gmail.com</a>
+    </div>
+
+    <!-- Location -->
+    <div class="card">
+      <h3>📍 Location</h3>
+      <p>Bujumbura, Burundi</p>
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="card">
+      <h3>💬 WhatsApp</h3>
+      <a href="https://wa.me/257XXXXXXXX" target="_blank">Chat Now</a>
+    </div>
+  </div>
+</section>
 📍 Bujumbura, Burundi | 📞 WhatsApp Available
 </footer>
 <style>
@@ -175,5 +202,57 @@ font-size:14px;
   color:#004d40;
 }
 </style>
-</body>
+</body><style>
+#contact{
+  padding:50px 20px;
+  background: linear-gradient(120deg, #e0f7fa, #b2ebf2);
+  text-align:center;
+  font-family: Arial, sans-serif;
+}
+
+#contact h2{
+  font-size:2.5em;
+  margin-bottom:30px;
+  color:#00796b;
+}
+
+.contact-cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  width:200px;
+  transition: transform 0.3s;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+}
+
+.card h3{
+  margin-bottom:10px;
+  color:#00796b;
+}
+
+.card a{
+  color:#004d40;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.card a:hover{
+  text-decoration:underline;
+}
+
+.card p{
+  color:#004d40;
+}
+</style>
 </html>
